@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.inovance.dam.core.util.ResourceUtil">
-  <reference name="plmConfiguration" interface="com.inovance.dam.core.config.PLMConfiguration" field="plmConfiguration"/>
-  <implementation class="com.inovance.dam.core.util.ResourceUtil"/>
-</scr:component>
