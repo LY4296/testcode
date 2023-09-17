@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/com.inovance.dam.core.config.PLMConfiguration$Config">
+  <OCD id="com.inovance.dam.core.config.PLMConfiguration$Config" name="PLM Configuration" description="Configure PLM synchronization settings">
+    <AD id="databaseName" type="String" name="Database Name" description="Specifies the name of the database where PLM synchronization data is stored." default="idtuat_db"/>
+    <AD id="inovanceFolderPath" type="String" name="Inovance Folder Path" description="Specifies the path to the Inovance directory." default="/content/dam/inovance"/>
+    <AD id="ipmsProjectUrl" type="String" name="IPMS Project URL" description="Specifies the URL for Inovance IPMS query project." default="https://idtuat.inovance.com/Thingworx/Things/DT.Project.Connector/Services/getProjectsNormalByClouse"/>
+    <AD id="pbiSalesCatalogUrl" type="String" name="PBI Sales Catalog URL" description="Specifies the URL for Inovance PBI SALES CATALOG." default="https://idtuat.inovance.com/Thingworx/Things/SV.PLM.Connector/Services/getpbisalescatalog"/>
+    <AD id="pbisalecatUrl" type="String" name="PBI Sale Catalog URL" description="Specifies the URL for Inovance PBI Sale catalog." default="https://idtuat.inovance.com/Thingworx/Things/SV.PLM.Connector/Services/getpbisalecat"/>
+    <AD id="pbicatalogUrl" type="String" name="PBI Catalog URL" description="Specifies the URL for Inovance PBI catalog." default="https://idtuat.inovance.com/Thingworx/Things/SV.PLM.Connector/Services/getpbicatalog"/>
+    <AD id="username" type="String" name="ResourceResolver Factory User" description="Specifies the username for ResourceResolver Factory." default="admin"/>
+    <AD id="password" type="String" name="ResourceResolver Factory Password" description="Specifies the password for ResourceResolver Factory." default="admin"/>
+  </OCD>
+  <Designate pid="com.inovance.dam.config.PLMConfiguration">
+    <Object ocdref="com.inovance.dam.core.config.PLMConfiguration$Config"/>
+  </Designate>
+</metatype:MetaData>

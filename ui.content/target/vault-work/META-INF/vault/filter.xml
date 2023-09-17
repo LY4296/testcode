@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/inovance" mode="merge"/>
+    <filter root="/content/inovance" mode="merge"/>
+    <filter root="/content/dam/inovance/asset.jpg" mode="merge"/>
+    <filter root="/content/experience-fragments/inovance" mode="merge"/>
+</workspaceFilter>

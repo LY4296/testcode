@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: Inovance - All
+Content-Package-Roots: /apps/inovance-packages,/apps/inovance-vendor-p
+ ackages
+Implementation-Version: 1.0.0-SNAPSHOT
+Build-Jdk-Spec: 1.8
+Content-Package-Type: container
+Created-By: Apache Jackrabbit FileVault - Package Maven Plugin 1.1.6
+Content-Package-Id: com.inovance.dam:inovance.all:1.0.0-SNAPSHOT
+Content-Package-Description: All content package for Inovance
+

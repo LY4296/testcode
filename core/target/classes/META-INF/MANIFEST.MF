@@ -1,0 +1,36 @@
+Manifest-Version: 1.0
+Bundle-Category: Inovance
+Bundle-Description: Core bundle for Inovance
+Bundle-ManifestVersion: 2
+Bundle-Name: Inovance - Core
+Bundle-SymbolicName: inovance.core
+Bundle-Version: 1.0.0.SNAPSHOT
+Import-Package: com.day.commons.datasource.poolservice;version="[1.1,2
+ )",com.day.cq.dam.api;version="[1.28,2)",com.day.cq.tagging;version="
+ [5.9,6)",com.fasterxml.jackson.annotation;version="[2.11,3)",com.fast
+ erxml.jackson.core.type;version="[2.11,3)",com.fasterxml.jackson.data
+ bind;version="[2.11,3)",com.fasterxml.jackson.databind.type;version="
+ [2.11,3)",javax.jcr;version="[2.0,3)",javax.sql,org.apache.commons.co
+ llections4;version="[4.4,5)",org.apache.commons.lang3;version="[3.12,
+ 4)",org.apache.sling.api.resource;version="[2.11,3)",org.slf4j;versio
+ n="[1.7,2)",javax.annotation;version="0.0.0"
+Private-Package: com.inovance.dam.core.config,com.inovance.dam.core.en
+ tity,com.inovance.dam.core.entity.inovance,com.inovance.dam.core.serv
+ ice,com.inovance.dam.core.util
+Provide-Capability: osgi.service;objectClass:List<String>="com.inovanc
+ e.dam.core.config.PLMConfiguration";uses:="com.inovance.dam.core.conf
+ ig",osgi.service;objectClass:List<String>="com.inovance.dam.core.serv
+ ice.SynchronizeDataServiceImpl";uses:="com.inovance.dam.core.service"
+Require-Capability: osgi.service;filter:="(objectClass=com.day.commons
+ .datasource.poolservice.DataSourcePool)";effective:=active,osgi.servi
+ ce;filter:="(objectClass=com.inovance.dam.core.config.PLMConfiguratio
+ n)";effective:=active,osgi.service;filter:="(objectClass=org.apache.s
+ ling.api.resource.ResourceResolverFactory)";effective:=active,osgi.ex
+ tender;filter:="(&(osgi.extender=osgi.component)(version>=1.4.0)(!(ve
+ rsion>=2.0.0)))",osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Service-Component: OSGI-INF/com.inovance.dam.core.config.PLMConfigurat
+ ion.xml,OSGI-INF/com.inovance.dam.core.service.SynchronizeDataService
+ Impl.xml,OSGI-INF/com.inovance.dam.core.util.JDBCUtil.xml,OSGI-INF/co
+ m.inovance.dam.core.util.LocalUtil.xml,OSGI-INF/com.inovance.dam.core
+ .util.ResourceUtil.xml
+

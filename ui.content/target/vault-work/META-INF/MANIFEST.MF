@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Implementation-Title: Inovance - UI content
+Content-Package-Roots: /conf/inovance,/content/dam/inovance/asset.jpg,
+ /content/experience-fragments/inovance,/content/inovance
+Implementation-Version: 1.0.0-SNAPSHOT
+Content-Package-Dependencies-Locations: com.inovance.dam:inovance.ui.a
+ pps:1.0.0-SNAPSHOT=maven:com.inovance.dam:inovance.ui.apps:1.0.0-SNAP
+ SHOT:zip
+Content-Package-Dependencies: com.inovance.dam:inovance.ui.apps:1.0.0-
+ SNAPSHOT
+Build-Jdk-Spec: 1.8
+Content-Package-Type: content
+Created-By: Apache Jackrabbit FileVault - Package Maven Plugin 1.1.6
+Content-Package-Id: com.inovance.dam:inovance.ui.content:1.0.0-SNAPSHO
+ T
+Content-Package-Description: UI content package for Inovance
+
